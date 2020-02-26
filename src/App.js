@@ -23,6 +23,8 @@ class App extends Component {
   }
 
 
+
+
   render() {
     const { monsters, searchField } = this.state; 
     const filteredMonsters = monsters.filter(monster =>
@@ -30,6 +32,7 @@ class App extends Component {
      );
     return (
       <div className="App">
+        <h1>We are Monsters of React</h1>
         <SearchBox
         placeholder='search monsters'
         handleChange={this.handleChange }
